@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'webfont';
+    font-display: swap;
+    src: url('//at.alicdn.com/t/webfont_jq0mkvmpxhn.eot'); /* IE9*/
+    src: url('//at.alicdn.com/t/webfont_jq0mkvmpxhn.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('//at.alicdn.com/t/webfont_jq0mkvmpxhn.woff2') format('woff2'),
+    url('//at.alicdn.com/t/webfont_jq0mkvmpxhn.woff') format('woff'), /* chrome、firefox */ url('//at.alicdn.com/t/webfont_jq0mkvmpxhn.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('//at.alicdn.com/t/webfont_jq0mkvmpxhn.svg#NotoSansHans-Black') format('svg'); /* iOS 4.1- */
+}
+
+#leftWidget {
+    background: rgba(62, 64, 64, 0.8);
+}
+
+#app_title {
+    color: white;
+    font-size: 22px;
+    font-family: 微软雅黑;
+}
+
+#left_list {
+    border: none;
+    background: transparent;
+}
+
+#left_list::Item {
+    height: 60px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+#left_list::Item:hover {
+    background: rgba(73, 120, 173, 0.8)
+    /*background: rgba(60, 62, 66, .8);*/
+}
+
+#left_list::Item:selected {
+    background: rgba(73, 120, 173, 0.8)
+}
+
+/*#left_list::Item:selected: !active {*/
+/*    background: rgba(60, 62, 66, .8);*/
+/*}*/
+
+#rightWidget {
+    background: rgba(137, 143, 158, 0.3);
+}
+
+#minimumButton, #maximumButton, #closeButton {
+    border: none;
+    color: rgb(33, 165, 229);
+    font-size: 20px;
+    /*background-color: rgb(34, 102, 175);*/
+}
+
+#minimumButton:hover, #maximumButton:hover {
+    color: rgb(0, 255, 255);
+    font-size: 24px;
+}
+
+#closeButton:hover {
+    color: rgb(0, 255, 255);
+    font-size: 24px;
+}
+
+#stack_random, #stack_heroes, #stack_add {
+    /*background: rgba(173, 226, 217, .3);*/
+    background: rgba(62, 62, 64, 0.6);
+    border-radius: 10px;
+}
+
+#amount, #amount QLabel, #amount QLineEdit {
+    background-color: transparent;
+    color: white;
+    font-family: 新宋体;
+    font-size: 24px;
+}
+
+#random_hero_res {
+    border: 2px solid rgba(0, 255, 255, .5);
+    border-radius: 10px;
+}
+
+#randomBtn {
+    background-color: rgba(3, 192, 224, 0.3);
+    /*background-image: url("./images/icon.png");*/
+    width: 100px;
+    height: 100px;
+    color: whitesmoke;
+    font-family: 新宋体;
+    font-weight: 600;
+    font-size: 24px;
+    border: 3px solid rgb(71, 149, 220);
+    /*border-radius: 50%;*/
+}
+
+#randomBtn:hover {
+    background-color: rgba(3, 192, 224, 0.4);
+}
+
+#scrollArea {
+    background: rgba(62, 62, 64, 0.6);
+}
+
+#add_form {
+    /*border: 1px solid red;*/
+    background: transparent;
+}
+
+#add_form * {
+    color: white;
+    font-size: 20px;
+}
+
+#add_form QLineEdit, #add_form QComboBox, #add_form QPushButton {
+    height: 30px;
+    background: transparent;
+    border: 1px solid rgb(71, 149, 220);
+}
+
+QComboBox QAbstractItemView { /* 下拉后的整个下拉窗体样式 */
+    background: rgba(62, 62, 64, 0.6);
+}
+
+QComboBox QListView::item { /* 下拉项样式 背景蓝色 */
+    /*padding-left: 30px;*/
+    /*background: pink;*/
+    /*color: #ffffff;*/
+}
+
+QComboBox QAbstractItemView {
+    border: 1px solid cyan;
+    border-radius: 2px;
+    color: white;
+    selection-background-color: rgb(70, 231, 113);
+    background-color: black;
+    selection-color: black;
+
+}
+
+QComboBox QListView::item:hover { /* 下拉项鼠标悬浮样式 背景灰绿色 */
+    /*color: #DCDCDC;*/
+    /*background: #3da79d;*/
+}
+
+QComboBox QListView::item:selected { /* 下拉项选中样式（效果不明显）*/
+    /*color: #DCDCDC;*/
+    /*background: pink;*/
+}
